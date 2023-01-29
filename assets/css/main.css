@@ -1511,7 +1511,7 @@ section {
   height: 86px;
   width: 86px;
   border-radius: 50%;
-  background: #87c1bb;
+  background: #babfea;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-1px);
 }
@@ -1522,7 +1522,7 @@ section {
   height: 102px;
   width: 102px;
   border-radius: 50%;
-  background: #d2eeeb;
+  background: #dbdef4;
   transition: all 0.3s ease-out 0s;
   transform: translateZ(-2px);
 }
