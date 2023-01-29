@@ -1,1 +1,1 @@
-Thanks impact for your cool sample:)
+# Website for Leto.gg
