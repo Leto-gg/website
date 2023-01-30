@@ -162,6 +162,37 @@
   </section>
   <!-- End Hero Section -->
 
+  <!-- ------------------------------------ -->
+
+  <head>
+    <script src="https://cdn.auth0.com/js/auth0/9.13/auth0.min.js"></script>
+    <script>
+      var webAuth = new auth0.WebAuth({
+        domain: '<%= process.env.AUTH0_DOMAIN %>',
+        clientID: '<%= process.env.AUTH0_CLIENT_ID %>'
+      });
+
+      function login() {
+        webAuth.authorize({
+          redirectUri: 'https://leto.gg/app',
+          responseType: 'token id_token',
+          scope: 'openid profile'
+        });
+      }
+    </script>
+  </head>
+
+  <body>
+    <button onclick="login()">Login</button>
+  </body>
+
+
+
+
+
+
+  <!-- ------------------------------------ -->
+
   <main id="main">
 
     <!-- ======= About Us Section ======= -->
