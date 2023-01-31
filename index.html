@@ -163,8 +163,27 @@
   </section>
   <!-- End Hero Section -->
 
+
+
+
+
+
+
+
+
+
   <!-- ============= Auth0 Login =============== -->
   <!-- If you have a version of python3 installed you can use it as a web server! -->
+
+
+
+
+
+
+
+
+
+
 
 
   <head>
@@ -177,7 +196,7 @@
 
       function login() {
         webAuth.authorize({
-          redirectUri: 'https://leto.gg/app',
+          redirectUri: 'http://localhost:8080/callback',
           responseType: 'token id_token',
           scope: 'openid profile'
         });
@@ -191,7 +210,31 @@
   </body>
 
 
+
+
+
+
+
+
+
+
+
   <!-- ========================================= -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   <main id="main">
 
