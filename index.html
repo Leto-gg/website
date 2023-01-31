@@ -67,7 +67,64 @@
           <li><a href="#hero">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
+
+
+
           <li><a href="#portfolio">Portfolio</a></li>
+
+
+          <!-- ============= Auth0 Login =============== -->
+          <!-- If you have a version of python3 installed you can use it as a web server! -->
+
+
+
+
+
+
+
+
+
+
+
+
+          <head>
+            <!--  <script src="https://cdn.auth0.com/js/auth0/9.13/auth0.min.js"></script> -->
+            <script>
+              var webAuth = new auth0.WebAuth({
+                domain: 'dev-sode3aby0kgnwc8n.us.auth0.com',
+                clientID: 'fHBaqxAuV9TMbWom4d0WBwnG0qtBoSIB'
+              });
+
+              function login() {
+                webAuth.authorize({
+                  redirectUri: 'http://localhost:8080/callback',
+                  responseType: 'token id_token',
+                  scope: 'openid profile'
+                });
+              }
+            </script>
+          </head>
+
+
+          <li>
+            <button onclick="login()">Login</button>
+          </li>
+
+
+
+
+
+
+
+
+
+
+
+          <!-- ========================================= -->
+
+
+
+          <!-- ========================================= 
           <li><a href="#team">Team</a></li>
           <li><a href="blog.html">Blog</a></li>
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i
@@ -91,6 +148,7 @@
           </li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        -->
       </nav><!-- .navbar -->
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
@@ -168,60 +226,6 @@
 
 
 
-
-
-
-
-
-
-  <!-- ============= Auth0 Login =============== -->
-  <!-- If you have a version of python3 installed you can use it as a web server! -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <head>
-    <!--  <script src="https://cdn.auth0.com/js/auth0/9.13/auth0.min.js"></script> -->
-    <script>
-      var webAuth = new auth0.WebAuth({
-        domain: 'dev-sode3aby0kgnwc8n.us.auth0.com',
-        clientID: 'fHBaqxAuV9TMbWom4d0WBwnG0qtBoSIB'
-      });
-
-      function login() {
-        webAuth.authorize({
-          redirectUri: 'http://localhost:8080/callback',
-          responseType: 'token id_token',
-          scope: 'openid profile'
-        });
-      }
-    </script>
-  </head>
-
-
-  <body>
-    <button onclick="login()">Login</button>
-  </body>
-
-
-
-
-
-
-
-
-
-
-
-  <!-- ========================================= -->
 
 
 
