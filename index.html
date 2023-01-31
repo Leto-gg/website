@@ -9,6 +9,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
   <script src="https://cdn.auth0.com/js/auth0/9.14/auth0.min.js"></script>
+
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -165,8 +166,7 @@
   <!-- ============= Auth0 Login =============== -->
   <!-- If you have a version of python3 installed you can use it as a web server! -->
 
-  --url 'https://YOUR_DOMAIN/api/v2/clients/fHBaqxAuV9TMbWom4d0WBwnG0qtBoSIB' \
-  <!-- 
+
   <head>
     <script src="https://cdn.auth0.com/js/auth0/9.13/auth0.min.js"></script>
     <script>
@@ -184,7 +184,7 @@
       }
     </script>
   </head>
--->
+
 
   <body>
     <button onclick="login()">Login</button>
@@ -1230,6 +1230,15 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  auth0.parseHash(window.location.hash, function(err, authResult) {
+  if (err) {
+  console.error(err);
+  } else if (authResult && authResult.accessToken && authResult.idToken) {
+  // Store the tokens in local storage or a cookie
+  // ...
+  }
+  });
 
 </body>
 
