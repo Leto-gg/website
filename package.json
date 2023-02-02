@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Leto-gg/leto.gg/issues"
   },
-  "homepage": "https://github.com/Leto-gg/leto.gg#readme"
+  "homepage": "https://github.com/Leto-gg/leto.gg#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
