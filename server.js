@@ -1,5 +1,6 @@
 const express = require('express');
 const dotenv = require('dotenv').config();
+const auth0 = require('auth0');
 const app = express();
 
 
