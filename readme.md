@@ -1,5 +1,5 @@
 # Leto.gg/website WIP
-This repo is dedicated to the public website located at “https://leto.gg”. 
+This repo is dedicated to the public website that is intended to be deployed at “https://leto.gg”. Currently the website at Leto.gg will remain until this version is finished.
 
 # Table of Contents
 - [Usage](#usage)
