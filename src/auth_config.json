@@ -1,7 +1,0 @@
-{
-    "domain": "dev-561zw80656alm5u3.us.auth0.com",
-    "clientId": "1pzGjNmrChGiWSxUt8byGkiZfz7W6hty",
-    "callbackUrl": "localhose:3004",
-    "appOrigin": "default: http://localhost:3004",
-    "apiOrigin": "{OPTIONAL: THE BASE URL OF YOUR API (default: http://localhost:3004)}"
-}

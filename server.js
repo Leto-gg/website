@@ -1,20 +1,40 @@
-const express = require("express");
-const morgan = require("morgan");
-const helmet = require("helmet");
-const { join } = require("path");
-
+const express = require('express');
+/* const auth0 = require('auth0-js'); */
 const app = express();
+require('dotenv').config();
+/* require('./lib/your-compiled-code'); */
 
-const port = process.env.SERVER_PORT || 3000;
 
-app.use(morgan("dev"));
+
 
 app.use(
-  helmet({
-    contentSecurityPolicy: false,
-  })
-);
 
-app.use(express.static(join(__dirname, "build")));
+  /*     ^^^^login with URL based Auth Token^^^
+      auth({
+   
+   
+       issuerBaseURL: process.env.ISSUER_BASE_URL,
+       baseURL: process.env.BASE_URL,
+       clientID: process.env.CLIENT_ID,
+       secret: process.env.SECRET,
+     }),
+  */
+  express.static(__dirname + '/public'));
 
-app.listen(port, () => console.log(`Server listening on port ${port}`));
+app.listen(3000, () => {
+  console.log('Server is running on port 3000');
+});
+
+/*
+if (!process.env.AUTH0_DOMAIN || !process.env.AUTH0_CLIENT_ID) {
+  throw new Error('Make sure to set AUTH0_DOMAIN and AUTH0_CLIENT_ID in your .env file');
+}
+
+var webAuth = new auth0.WebAuth({
+  domain: process.env.AUTH0_DOMAIN,
+  clientID: process.env.AUTH0_CLIENT_ID
+});
+*/
+
+
+// main 
